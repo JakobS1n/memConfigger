@@ -24,7 +24,7 @@ If the line does not start with an exlamation mark, we are assuming the first wo
 - `LONG <variable_name>` This is two bytes, usually you would sum them to get their value.
 - `INT <variable_name>` This is just one byte.
 
-== Example-file
+## Example-file
 ```
 # We are setting the size, so the parser can notify us if and when we exceed it
 !SIZE 124
