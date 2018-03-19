@@ -106,7 +106,12 @@ with open(sys.argv[1].split('.')[0] + ".out.adoc", "w") as hOut:
 
 # Print C++ code, this block WILL remove the first item of the list, so beware!!!
 with open(sys.argv[1].split('.')[0] + ".out.cpp", "w") as cppOut:
-    cppOut.write("#region GENERATED_CODE\n")
+    cppOut.write("#region ADDR_FUNC\n")
+    cppOut.write("// Machine-generated function, unnescecary to change manually\n")
+    cppOut.write("// The generator is here https://github.com/JakobS1n/memConfigger\n")
+    cppOut.write("// There should be a more readable version of this table somewhere\n")
+    cppOut.write("// Refeer to that when determening what type each variable is!\n")
+    
     cppOut.write("struct memoryAdress memoryAccess::getAddress(String varName) {\n")
     cppOut.write("\tmemoryAdress tmp;\n")
 
