@@ -112,7 +112,7 @@ with open(sys.argv[1].split('.')[0] + ".out.cpp", "w") as cppOut:
 
     specialCase = memStruct.pop(0)
     cppOut.write("\tif ((String \"" + specialCase[1] + "\" == varName)")
-    cppOut.write("{tmp={" + str(variable[3]) + "," + str(variable[4]) + "};}\n")
+    cppOut.write("{tmp={" + str(specialCase[3]) + "," + str(specialCase[4]) + "};}\n")
 
     for variable in memStruct:
         cppOut.write("\telse if ((String) \"" + variable[1] + "\" == varName)")
